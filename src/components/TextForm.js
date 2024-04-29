@@ -73,21 +73,21 @@ export default function TextForm(props) {
 				</button>
 				<button
 					type="button"
-					class="btn btn-outline-danger mx-2"
+					className="btn btn-outline-danger mx-2"
 					onClick={handleClearClick}
 				>
 					Clear text
 				</button>
 				<button
 					type="button"
-					class="btn btn-outline-primary mx-2"
+					className="btn btn-outline-primary mx-2"
 					onClick={handleCopy}
 				>
 					Copy text
 				</button>
 				<button
 					type="button"
-					class="btn btn-outline-primary mx-2"
+					className="btn btn-outline-primary mx-2"
 					onClick={handleExtraSpaces}
 				>
 					Remove Extra Spaces
@@ -101,8 +101,15 @@ export default function TextForm(props) {
 			>
 				<h3>Your text summary</h3>
 				<p>
-					<b>{text.length > 0 ? text.split(" ").length : 0}</b> words &{" "}
-					<b>{text.replace(" ", "").length}</b> Characters.
+					<b>
+						{text.length > 0
+							? text
+									.replace(/[^\w\s]|_/g, "")
+									.trim()
+									.split(/\s+/).length
+							: 0}
+					</b>{" "}
+					words & <b>{text.replace(" ", "").length}</b> Characters.
 				</p>
 				<p>
 					Total <b>{text.split(".").length - 1}</b> sentences in your text.

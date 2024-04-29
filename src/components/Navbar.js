@@ -34,6 +34,35 @@ export default function Navbar(props) {
 							</a>
 						</li>
 					</ul>
+					<div>Choose color theme:- </div>
+					<div className="mx-2">
+						<div className="btn-group" role="group" aria-label="Basic example">
+							<button
+								type="button"
+								value="Red"
+								className="btn btn-danger"
+								onClick={() => props.colorMode("#EF5350", "Red")}
+							>
+								Red
+							</button>
+							<button
+								type="button"
+								value="Green"
+								className="btn btn-success"
+								onClick={() => props.colorMode("#66BB6A", "Green")}
+							>
+								Green
+							</button>
+							<button
+								value="Blue"
+								type="button"
+								className="btn btn-primary"
+								onClick={() => props.colorMode("#42A5F5", "Blue")}
+							>
+								Blue
+							</button>
+						</div>
+					</div>
 					<div
 						className={`form-check form-switch text-${
 							props.mode === "light" ? "dark" : "light"
@@ -53,7 +82,6 @@ export default function Navbar(props) {
 							Enable {props.mode === "light" ? "dark" : "light"} Mode
 						</label>
 					</div>
-
 					{/* <form className="d-flex" role="search">
 						<input
 							className="form-control me-2"
