@@ -1,10 +1,8 @@
-import logo from "./logo.svg"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import TextForm from "./components/TextForm"
 import About from "./components/about"
 import { useState } from "react"
-import Alert from "./components/Alert"
 import {
 	createBrowserRouter,
 	BrowserRouter,
@@ -54,7 +52,7 @@ function App() {
 
 	const router = createBrowserRouter([
 		{
-			path: "/ ",
+			path: "/textutils",
 			element: (
 				<>
 					<Navbar />
@@ -74,15 +72,9 @@ function App() {
 	])
 	return (
 		<>
-			<BrowserRouter>
-				{/* <Navbar
-				title="Textutils"
-				mode={mode}
-				colorMode={colorMode}
-				toggleMode={toggleMode}
-			/> */}
-				<RouterProvider router={router}></RouterProvider>
-			</BrowserRouter>
+				<RouterProvider router={router}>
+					<h1>hiii</h1>
+				</RouterProvider>
 		</>
 	)
 	// <>
