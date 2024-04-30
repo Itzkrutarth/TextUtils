@@ -5,6 +5,11 @@ import TextForm from "./components/TextForm"
 import About from "./components/about"
 import { useState } from "react"
 import Alert from "./components/Alert"
+import {
+	createBrowserRouter,
+	BrowserRouter,
+	RouterProvider,
+} from "react-router-dom"
 
 let name = "Krutarth"
 let darkbg = "#32393f"
@@ -29,6 +34,9 @@ function App() {
 			document.body.style.backgroundColor = darkbg
 			showAlert("Dark mode has been enabled!!", "success")
 			document.title = "Textutils - Dark Mode"
+			// setInterval(() => {
+			// 	document.title = "Textutils is amazing"
+			// }, 2000)
 		} else {
 			setMode("light")
 			document.body.style.backgroundColor = "white"
@@ -43,27 +51,58 @@ function App() {
 		showAlert(val + " mode has been enabled!!", "success")
 		document.body.style.backgroundColor = color
 	}
+
+	const router = createBrowserRouter([
+		{
+			path: "/ ",
+			element: (
+				<>
+					<Navbar />
+					<TextForm />
+				</>
+			),
+		},
+		{
+			path: "/about",
+			element: (
+				<>
+					<Navbar />
+					<About />
+				</>
+			),
+		},
+	])
 	return (
 		<>
-			<Navbar
+			<BrowserRouter>
+				{/* <Navbar
 				title="Textutils"
 				mode={mode}
 				colorMode={colorMode}
 				toggleMode={toggleMode}
-			/>
-			<Alert alert={alert} />
-			<div className="container my-3">
-				<TextForm
-					showAlert={showAlert}
-					heading="Enter the text below to analyze."
-					mode={mode}
-				/>
-			</div>
-			{/* <div className="container my-3">
-				<About />
-			</div> */}
+			/> */}
+				<RouterProvider router={router}></RouterProvider>
+			</BrowserRouter>
 		</>
 	)
+	// <>
+	// 	<Navbar
+	// 		title="Textutils"
+	// 		mode={mode}
+	// 		colorMode={colorMode}
+	// 		toggleMode={toggleMode}
+	// 	/>
+	// 	<RouterProvider router={router}>
+	// 	{/* <Alert alert={alert} />
+	// 	<div className="container my-3">
+	// 		<About />
+	// 		<TextForm
+	// 			showAlert={showAlert}
+	// 			heading="Enter the text below to analyze."
+	// 			mode={mode}
+	// 		/>
+	// 	</div> */}
+	// </>
+	// </>
 }
-
 export default App
