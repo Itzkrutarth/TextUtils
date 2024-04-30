@@ -53,21 +53,43 @@ function App() {
 	}
 
 	const router = createBrowserRouter([
-		{
-			path: "/TextUtils",
-			element: (
-				<>
-					<Navbar />
-					<TextForm />
-				</>
-			),
-		},
+		// {
+		// 	path: "/TextUtils",
+		// 	element: (
+		// 		<>
+		// 			<Navbar
+		// 				title="Textutils"
+		// 				mode={mode}
+		// 				colorMode={colorMode}
+		// 				toggleMode={toggleMode}
+		// 			/>
+		// 			<Alert alert={alert} />
+		// 			<TextForm
+		// 				showAlert={showAlert}
+		// 				heading="Enter the text below to analyze."
+		// 				mode={mode}
+		// 			/>
+		// 		</>
+		// 	),
+		// },
 		{
 			path: "/",
 			element: (
 				<>
-					<Navbar />
-					<TextForm />
+					<Navbar
+						title="Textutils"
+						mode={mode}
+						colorMode={colorMode}
+						toggleMode={toggleMode}
+					/>
+					<Alert alert={alert} />
+					<div className="container my-3">
+						<TextForm
+							showAlert={showAlert}
+							heading="Enter the text below to analyze."
+							mode={mode}
+						/>
+					</div>
 				</>
 			),
 		},
@@ -75,7 +97,13 @@ function App() {
 			path: "/about",
 			element: (
 				<>
-					<Navbar />
+					<Navbar
+						title="Textutils"
+						mode={mode}
+						colorMode={colorMode}
+						toggleMode={toggleMode}
+					/>
+					<Alert alert={alert} />
 					<About />
 				</>
 			),
