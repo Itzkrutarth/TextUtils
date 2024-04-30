@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { NavLink } from "react-router-dom"
 
 export default function Navbar(props) {
 	return (
@@ -29,9 +30,9 @@ export default function Navbar(props) {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="/">
-								{props.aboutText}
-							</a>
+							<NavLink to="./about">
+								<a className="nav-link">{props.aboutText}</a>
+							</NavLink>
 						</li>
 					</ul>
 					<div>Choose color theme:- </div>

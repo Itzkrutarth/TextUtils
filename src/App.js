@@ -54,7 +54,16 @@ function App() {
 
 	const router = createBrowserRouter([
 		{
-			path: "/ ",
+			path: "/TextUtils",
+			element: (
+				<>
+					<Navbar />
+					<TextForm />
+				</>
+			),
+		},
+		{
+			path: "/",
 			element: (
 				<>
 					<Navbar />
@@ -74,15 +83,7 @@ function App() {
 	])
 	return (
 		<>
-			<BrowserRouter>
-				{/* <Navbar
-				title="Textutils"
-				mode={mode}
-				colorMode={colorMode}
-				toggleMode={toggleMode}
-			/> */}
-				<RouterProvider router={router}></RouterProvider>
-			</BrowserRouter>
+			<RouterProvider router={router}></RouterProvider>
 		</>
 	)
 	// <>

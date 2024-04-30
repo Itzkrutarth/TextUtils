@@ -1,0 +1,123 @@
+hii
+kr solve.
+aa bdhu hmna j try kri joyu.
+
+ha bro ola b chalu 6e server A bandh kr ne 
+node vada 
+terminal ma thi?
+
+olu npm run start vada 
+
+tari site chalu 6e
+done.
+ok
+
+bro shared server ma mne trara current running project no port aap to 
+mara ma khultu nai website tari 
+
+aayu?
+ha
+
+inspect kris to awse ke browserRouter na lidhe j kaik issues che.
+
+taru olu foldre kya 6e jema badhu download that 6e 
+??
+ 
+ kayu folder?
+ 
+ jema badhi dependency download thay
+
+ name is Node_modules.
+
+ ha aj 
+ ane delete mar de to 
+ just a sec.
+ done.
+ aayi gyu fri.
+
+ ha npm i maryu atle 
+ fri session udadi n run kru? npm r start?
+ kru session 
+
+ same error still.
+
+ locha j che la mrwa de ne pelu chaa wadu kru chu fri thi.
+ 
+ 
+ hmm l
+ ha 
+ euk tari packge.json ma error lage 
+
+jo ama rect router dom nai aavtu
+ok .
+
+ haa e hoi ske bcz ek war bhul thi me udadi marelu .json pai recycle ma thi pachu layelo.
+ nava project ma to issue nai awe ne?
+ 
+ You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+
+ Unexpected Application Error!
+404 Not Found
+
+💿 Hey developer 👋
+
+You can provide a way better UX than this when your app throws errors by providing your own ErrorBoundary or errorElement prop on your route.
+ 
+
+ thai jse hve ruk
+ 
+ jo hve kuka
+
+ Could not find a matching route for errors on route IDs: __shim-error-route__
+
+ hve jo http://localhost:3002/TextUtils aama 
+
+ khuli to gyu pn about wado route ma aau awe che.
+
+  Unexpected Application Error!
+404 Not Found
+
+💿 Hey developer 👋
+
+You can provide a way better UX than this when your app throws errors by providing your own ErrorBoundary or errorElement prop on your route.
+ url type kr tu.
+
+ek sec.
+
+http://localhost:3002/TextUtils/about   edit thissssss. aama kai aayu 
+?? 
+
+haa thyu pn ek sec.
+
+
+
+ m j textutils ni jagya a about lakh 
+
+
+ bdhu edit kr de etle ke.
+ jo thai gyu badhu 
+ ok abolumt cm.a link ma te root ni aali ti atle 
+ lmc.
+ su ??
+
+ page load pkde che.
+ ak kam kr badhdha browser bandh krde na jrur hoy to 
+
+ sambhd almost done.
+ the thing is ke about pr click kru te A HREF wapryu etle page bdlay apde router thi krwanu che SPA.
+ yes u have to use link 
+
+ donee?
+ little error 
+
+ wait.
+ me joyelu ena me ene just browser ma /about kri n khole to
+page reload ntu thtu e thyi gyu apde . hve agd nu ena ma jou.
+
+done done chal thnx.😍😍😍.
+ 
+ ha 
+ yup bro 
+ ✌️✌️🤩🤩
+
+ ending the session. hau 
