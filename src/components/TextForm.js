@@ -65,13 +65,22 @@ export default function TextForm(props) {
 						rows="8"
 					></textarea>
 				</div>
-				<button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>
+				<button
+					disabled={text.length === 0}
+					className="btn btn-primary mx-2 my-2"
+					onClick={handleUpClick}
+				>
 					Convert to upper Case
 				</button>
-				<button className="btn btn-primary mx-2 my-2" onClick={handleLowClick}>
+				<button
+					disabled={text.length === 0}
+					className="btn btn-primary mx-2 my-2"
+					onClick={handleLowClick}
+				>
 					Convert to lower Case
 				</button>
 				<button
+					disabled={text.length === 0}
 					type="button"
 					className="btn btn-outline-danger mx-2 my-2"
 					onClick={handleClearClick}
@@ -79,6 +88,7 @@ export default function TextForm(props) {
 					Clear text
 				</button>
 				<button
+					disabled={text.length === 0}
 					type="button"
 					className="btn btn-outline-primary mx-2 my-2"
 					onClick={handleCopy}
@@ -86,6 +96,7 @@ export default function TextForm(props) {
 					Copy text
 				</button>
 				<button
+					disabled={text.length === 0}
 					type="button"
 					className="btn btn-outline-primary mx-2 my-2"
 					onClick={handleExtraSpaces}
@@ -122,7 +133,9 @@ export default function TextForm(props) {
 					seconds to read the phrase.
 				</p>
 				<h3>Preview</h3>
-				<p>{text.length > 0 ? text : "Enter Something to preview here."}</p>
+				<p>
+					<i>{text.length > 0 ? text : "Nothing to preview!"}</i>
+				</p>
 			</div>
 		</>
 	)

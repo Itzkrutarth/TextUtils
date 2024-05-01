@@ -33,7 +33,7 @@ function App() {
 			setMode("dark")
 			document.body.style.backgroundColor = darkbg
 			showAlert("Dark mode has been enabled!!", "success")
-			document.title = "Textutils - Dark Mode"
+			// document.title = "Textutils - Dark Mode"
 			// setInterval(() => {
 			// 	document.title = "Textutils is amazing"
 			// }, 2000)
@@ -41,7 +41,7 @@ function App() {
 			setMode("light")
 			document.body.style.backgroundColor = "white"
 			showAlert("Light mode has been enabled!!", "success")
-			document.title = "Textutils - Light Mode"
+			// document.title = "Textutils - Light Mode"
 		}
 	}
 
