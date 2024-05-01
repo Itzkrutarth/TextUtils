@@ -35,7 +35,9 @@ export default function Navbar(props) {
 							</Link>
 						</li>
 					</ul>
-					<div>Choose color theme:- </div>
+					<div className={`text-${props.mode === "light" ? "dark" : "light"}`}>
+						Choose color theme:-{" "}
+					</div>
 					<div className="mx-2">
 						<div className="btn-group" role="group" aria-label="Basic example">
 							<button
