@@ -53,25 +53,6 @@ function App() {
 	}
 
 	const router = createBrowserRouter([
-		// {
-		// 	path: "/TextUtils",
-		// 	element: (
-		// 		<>
-		// 			<Navbar
-		// 				title="Textutils"
-		// 				mode={mode}
-		// 				colorMode={colorMode}
-		// 				toggleMode={toggleMode}
-		// 			/>
-		// 			<Alert alert={alert} />
-		// 			<TextForm
-		// 				showAlert={showAlert}
-		// 				heading="Enter the text below to analyze."
-		// 				mode={mode}
-		// 			/>
-		// 		</>
-		// 	),
-		// },
 		{
 			path: "/",
 			element: (
